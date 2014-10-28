@@ -25,6 +25,8 @@
            
   <remote  name="ok"
            fetch="https://github.com/Octo-Kat/"
+           push="ssh://review.teamoctos.com: 29418"
+           review="http://review.teamoctos.com: 8080"
            sync-c="true"
            sync-j="4" />
 
