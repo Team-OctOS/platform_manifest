@@ -1,9 +1,9 @@
-Carbon-Dev Source
+Team-OctOS Source
 ===================
 
 Getting Started
 ---------------
-To get started with the Carbon-Dev sources, you'll need to get
+To get started with the Team-OctOS sources, you'll need to get
 familiar with [Git and Repo](http://source.android.com/source/version-control.html).
 
 
@@ -15,7 +15,7 @@ You will need to set up some directories in your build environment.
 To create them run:
 
     mkdir -p ~/bin
-    mkdir -p ~/carbon
+    mkdir -p ~/octos
 
 
 Install the Repository
@@ -28,7 +28,7 @@ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/rep
 You may need to reboot for these changes to take effect. 
 Now enter the following to initialize the repository:
 
-    cd ~/carbon
+    cd ~/octos
 
 
 Repositories:
@@ -36,7 +36,7 @@ Repositories:
 
 Before you continue --> run this in the terminal
 ----------------------------------------
-    repo init -u https://github.com/CarbonDev/android.git -b kk && repo sync -f
+    repo init -u https://github.com/Team-OctOS/android.git -b kk-4.4 && repo sync -f
 
 *PLEASE NOTE THAT YOU MUST USE THE -f flag when repo syncing/initializing if you want to sync with our default -j4 setup as android.googlesource seems to like to reject your requests if you set your -jflag too high. 
 if you wish to avoid this issue run it repo sync -j1 otherwise -f (force) is recommended so it will resync the repos it gets error codes on. Thank you and have a nice day.*
@@ -54,22 +54,22 @@ Enter the number of the build you want to start and press enter
 
 Build the Code:
 
-    make carbon -j7 = Run Squisher/Run Opticharger
+    make oct -j7 = Run Squisher/Run Opticharger
     make otapackage -j7 = No Squisher/No Opticharger
 
 
 Submitting Patches
 ------------------
-Patches are always welcome!  Please submit your patches via CarbonDev Gerrit!
+Patches are always welcome!  Please submit your patches via Team-OctOS Gerrit!
 You can do this by using these commands:
 
     Setting up for repo upload: (run these commands once)
-    git config --global review.review.carbonrom.org.username <Your username registered at CarbonDev gerrit>
-    git config --global review.review.carbonrom.org.email <Your email registered at CarbonDev gerrit>
+    git config --global review.review.teamoctos.com.username <Your username registered at Team-OctOS gerrit>
+    git config --global review.teamoctos.com.email <Your email registered at Team-OctOS gerrit>
 
     (From root android directory)
     . build/envsetup.sh
-    repo start kk .
+    repo start kk-4.4 .
     (Make your changes and commit)
     repo upload .
 
@@ -79,6 +79,4 @@ For more help on using this tool, use this command: repo help upload
 Make your changes and commit with a detailed message, starting with what you are working with (i.e. vision: Update Kernel)
 Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
 
-To view the status of your and others' patches, visit [Carbondev Code Review](http://review.carbonrom.org/)
-
-If you have any issues/questions please contact us in channel: #teamcarbon  server: irc.freenode.net
+To view the status of your and others' patches, visit [Team-OctOS Code Review](http://review.teamoctos.com:8080)
