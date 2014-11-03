@@ -24,9 +24,8 @@
            sync-j="4" />
            
   <remote  name="ok"
-           fetch="https://github.com/Octo-Kat/"
-           push="ssh://review.teamoctos.com: 29418"
-           review="http://review.teamoctos.com: 8080"
+           fetch="https://github.com/Team-OctOS/"
+           review="review.teamoctos.com"
            sync-c="true"
            sync-j="4" />
 
@@ -45,10 +44,10 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="platform_build" groups="pdk" revision="WIP" >
+  <project path="build" name="platform_build" groups="pdk" revision="kk-4.4" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="platform" name="platform_manifest" remote="ok" revision="WIP" />
+  <project path="platform" name="platform_manifest" remote="ok" revision="kk-4.4" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="art" name="android_art" remote="cr" revision="kk" />
   <project path="bionic" name="android_bionic" groups="pdk" remote="cr" revision="kk" />
@@ -309,7 +308,7 @@
   <project path="external/zlib" name="android_external_zlib" remote="cm" revision="cm-11.0" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="frameworks/av" name="android_frameworks_av" remote="cr" revision="kk" />
-  <project path="frameworks/base" name="platform_frameworks_base" revision="WIP"/>
+  <project path="frameworks/base" name="platform_frameworks_base" remote="ok" revision="kk-4.4" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
@@ -352,7 +351,7 @@
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="cr" revision="kk" />
-  <project path="hardware/qcom/display-caf" name="platform_hardware_qcom_display-caf" remote="ok" revision="WIP" />
+  <project path="hardware/qcom/display-caf" name="platform_hardware_qcom_display-caf" remote="ok" revision="kk-4.4" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="cm" revision="cm-11.0" groups="qcom" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="cm" revision="cm-11.0" />
@@ -380,7 +379,7 @@
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="cr" revision="kk" />
   <project path="packages/apps/OctOSAbout" name="platform_packages_apps_OctOSAbout" remote="ok" revision="kk-4.4" />
   <project path="packages/apps/OctDelta" name="platform_packages_apps_OctDelta" remote="ok" revision="kk-4.4" />
-  <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="ok" revision="WIP" />
+  <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="ok" revision="kk-4.4" />
   <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/FileManager" name="platform_packages_apps_FileManager" remote="ok" revision="kk-4.4" />
@@ -409,7 +408,7 @@
   <project path="packages/apps/ROMStats" name="android_packages_apps_ROMStats" remote="cr" revision="kk" />
   <project path="packages/apps/SamsungServiceMode" name="android_packages_apps_SamsungServiceMode" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/ScreenRecorder" name="ChameleonOS/android_packages_apps_ScreenRecorder" remote="gh" revision="kitkat" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="ok" revision="WIP" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="ok" revision="kk-4.4" />
   <project path="packages/apps/SmartCardService" name="android_packages_apps_SmartCardService" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
@@ -421,7 +420,7 @@
   <project path="packages/apps/Torch" name="SlimRoms/packages_apps_Torch" remote="gh" revision="kk4.4" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/VoicePlus" name="android_packages_apps_VoicePlus" remote="cm" revision="cm-11.0" />
-  <project path="packages/wallpapers/OctPapers" name="platform_packages_apps_OctPapers" remote="ok" />
+  <project path="packages/wallpapers/OctPapers" name="platform_packages_wallpapers_OctPapers" remote="ok" revision="kk4.4" />
   <project path="packages/experimental" name="platform/packages/experimental" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="cr" revision="kk" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
@@ -438,15 +437,15 @@
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="cr" revision="kk" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="packages/wallpapers/BlueBalls" name="android_packages_wallpapers_BlueBalls" remote="ok" revision="kk" />
+  <project path="packages/wallpapers/BlueBalls" name="platform_packages_wallpapers_BlueBalls" remote="ok" revision="kk-4.4" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="packages/wallpapers/OctSun" name="packages_wallpapers_OctSun" remote="ok" />
-  <project path="packages/wallpapers/OctPhase" name="packages_wallpapers_OctPhase" remote="ok" />
+  <project path="packages/wallpapers/OctSun" name="platform_packages_wallpapers_OctSun" remote="ok" revision="kk-4.4" />
+  <project path="packages/wallpapers/OctPhase" name="platform_packages_wallpapers_OctPhase" remote="ok" revision="kk-4.4" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
@@ -516,5 +515,5 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="vendor/oct" name="vendor_oct" remote="ok" revision="WIP" />
+  <project path="vendor/oct" name="vendor_oct" remote="ok" revision="kk-4.4" />
 </manifest>
