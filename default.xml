@@ -377,12 +377,8 @@
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="cr" revision="kk" />
-  <project path="packages/apps/OctOSAbout" name="platform_packages_apps_OctOSAbout" remote="ok" revision="kk-4.4" />
-  <project path="packages/apps/OctDelta" name="platform_packages_apps_OctDelta" remote="ok" revision="kk-4.4" />
-  <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="ok" revision="kk-4.4" />
   <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" remote="cm" revision="cm-11.0" />
-  <project path="packages/apps/FileManager" name="platform_packages_apps_FileManager" remote="ok" revision="kk-4.4" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="cr" revision="kk" />
   <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="cr" revision="kk" />
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="cm" revision="cm-11.0" />
@@ -390,6 +386,7 @@
   <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/Email" name="android_packages_apps_Email" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="cm" revision="cm-11.0" />
+  <project path="packages/apps/FileManager" name="platform_packages_apps_FileManager" remote="ok" revision="kk-4.4" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="cr" revision="kk" />
   <project path="packages/apps/HTMLViewer" name="android_packages_apps_HTMLViewer" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="cr" revision="kk" />
@@ -399,6 +396,8 @@
   <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="cr" revision="kk" />
   <project path="packages/apps/MusicFX" name="android_packages_apps_MusicFX" remote="cr" revision="kk" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cm" revision="cm-11.0" />
+  <project path="packages/apps/OctDelta" name="platform_packages_apps_OctDelta" remote="ok" revision="kk-4.4" />
+  <project path="packages/apps/OctOSAbout" name="platform_packages_apps_OctOSAbout" remote="ok" revision="kk-4.4" />
   <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="cr" revision="kk" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/apps/PackageInstaller" name="omnirom/android_packages_apps_PackageInstaller" remote="gh" revision="android-4.4" />
@@ -414,13 +413,13 @@
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="cm" revision="cm-11.0" />
-  <project path="packages/apps/Superuser" name="android_packages_apps_Superuser" remote="ok" revision="CF-1.99" />
+  <project path="packages/apps/Superuser" name="platform_packages_apps_Superuser" remote="ok" revision="CF-1.99" />
   <project path="packages/apps/Tag" name="android_packages_apps_Tag" remote="cm" revision="cm-11.0" />
+  <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="ok" revision="kk-4.4" />
   <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/Torch" name="SlimRoms/packages_apps_Torch" remote="gh" revision="kk4.4" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/VoicePlus" name="android_packages_apps_VoicePlus" remote="cm" revision="cm-11.0" />
-  <project path="packages/wallpapers/OctPapers" name="platform_packages_wallpapers_OctPapers" remote="ok" revision="kk4.4" />
   <project path="packages/experimental" name="platform/packages/experimental" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="cr" revision="kk" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
@@ -444,8 +443,9 @@
   <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="packages/wallpapers/OctSun" name="platform_packages_wallpapers_OctSun" remote="ok" revision="kk-4.4" />
+  <project path="packages/wallpapers/OctPapers" name="platform_packages_wallpapers_OctPapers" remote="ok" revision="kk4.4" />
   <project path="packages/wallpapers/OctPhase" name="platform_packages_wallpapers_OctPhase" remote="ok" revision="kk-4.4" />
+  <project path="packages/wallpapers/OctSun" name="platform_packages_wallpapers_OctSun" remote="ok" revision="kk-4.4" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
@@ -515,5 +515,5 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="vendor/oct" name="vendor_oct" remote="ok" revision="kk-4.4" />
+  <project path="vendor/oct" name="platform_vendor_oct" remote="ok" revision="kk-4.4" />
 </manifest>
