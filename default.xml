@@ -443,7 +443,7 @@
   <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="packages/wallpapers/OctPapers" name="platform_packages_wallpapers_OctPapers" remote="ok" revision="kk4.4" />
+  <project path="packages/wallpapers/OctPapers" name="platform_packages_wallpapers_OctPapers" remote="ok" revision="kk-4.4" />
   <project path="packages/wallpapers/OctPhase" name="platform_packages_wallpapers_OctPhase" remote="ok" revision="kk-4.4" />
   <project path="packages/wallpapers/OctSun" name="platform_packages_wallpapers_OctSun" remote="ok" revision="kk-4.4" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
