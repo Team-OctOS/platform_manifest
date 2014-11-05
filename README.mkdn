@@ -1,5 +1,5 @@
-Team-OctOS Source
-===================
+Team-OctOS Android Source
+=========================
 
 Getting Started
 ---------------
