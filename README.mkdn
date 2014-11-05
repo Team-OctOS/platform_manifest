@@ -121,7 +121,7 @@ Submitting Patches
 ------------------
 Patches are always welcome!  Please submit your patches via Team-OctOS Gerrit!
 
-    <This section to be filled in at a later time>
+    This section to be filled in at a later time
 
 Make your changes and commit with a detailed message, starting with what you are working with (i.e. vision: Update Kernel)
 Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
