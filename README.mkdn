@@ -41,7 +41,7 @@ review.
 This will display your PUBLIC SSH Key.  This is what you will put on GitHub and Gerrit,
 and will be used to identify you to those services.
 
-Please see GitHub's "Step 3: Add your SSH key to GitHub" (https://help.github.com/articles/generating-ssh-keys/#step-3-add-your-ssh-key-to-github)
+Please see GitHub's [Step 3: Add your SSH key to GitHub](https://help.github.com/articles/generating-ssh-keys/#step-3-add-your-ssh-key-to-github)
 to add your key to your account.
 
 
