@@ -23,7 +23,7 @@ step!
 Note: If you already have existing SSH Keys, doing this will overwrite them! 
 
     cd ~
-    ssh-keygen -t RSA
+    ssh-keygen -t rsa
 
 It will ask you where to store the key (defaults to ~/.ssh/id_rsa) and will ask if you
 wish to enter a password.  If you enter a password, you will need to enter this EVERY
