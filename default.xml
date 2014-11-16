@@ -26,6 +26,7 @@
   <remote  name="ok"
            fetch="https://github.com/Team-OctOS/"
            review="review.teamoctos.com"
+           revision="refs/heads/kk-4.4"
            sync-c="true"
            sync-j="4" />
 
@@ -44,7 +45,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="platform_build" groups="pdk" revision="kk-4.4" >
+  <project path="build" name="platform_build" groups="pdk" remote="ok" revision="kk-4.4" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="platform" name="platform_manifest" remote="ok" revision="kk-4.4" />
