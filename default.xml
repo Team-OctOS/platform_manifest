@@ -39,8 +39,8 @@
            sync-c="true"
            sync-j="4" />
 
-  <default revision="refs/heads/kk-4.4"
-           remote="ok"
+  <default revision="refs/heads/cm-11.0"
+           remote="cm"
            sync-c="true"
            sync-j="4" />
 
