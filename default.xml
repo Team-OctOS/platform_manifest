@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="to"
-           fetch="git://github.com/treken/"
+           fetch="http://github.com/treken/"
            sync-c="true"
            sync-j="8" />
 
   <remote  name="aosp"
-           fetch="http://android.googlesource.com/"
+           fetch="https://android.googlesource.com/"
            review="android-review.googlesource.com" />
 
   <remote  name="gh"
-           fetch="git://github.com/"
+           fetch="http://github.com/"
            sync-c="true"
            sync-j="8" />
            
   <remote  name="carbon"
-           fetch="git://github.com/CarbonROM/"
+           fetch="http://github.com/CarbonROM/"
            sync-c="true"
            sync-j="8" />
            
   <remote  name="cm"
-           fetch="git://github.com/CyanogenMod/"
+           fetch="http://github.com/CyanogenMod/"
            sync-c="true"
            sync-j="8" />
 
   <remote  name="tm"
-           fetch="git://github.com/TheMuppets/"
+           fetch="http://github.com/TheMuppets/"
            sync-c="true"
            sync-j="8" />
 
@@ -33,7 +33,7 @@
            remote="cm"
            sync-j="8" />
 
-  <project path="build" name="android_build" remote="carbon" revision="lollipop" >
+  <project path="build" name="platform_build" remote="to" revision="to-5.0" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
