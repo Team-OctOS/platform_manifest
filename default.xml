@@ -13,7 +13,12 @@
            fetch="git://github.com/"
            sync-c="true"
            sync-j="8" />
-
+           
+  <remote  name="carbon"
+           fetch="git://github.com/CarbonROM/"
+           sync-c="true"
+           sync-j="8" />
+           
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod/"
            sync-c="true"
