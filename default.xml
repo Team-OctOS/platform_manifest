@@ -6,7 +6,7 @@
            sync-j="8" />
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/"
+           fetch="http://android.googlesource.com/"
            review="android-review.googlesource.com" />
 
   <remote  name="gh"
