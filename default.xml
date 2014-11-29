@@ -10,7 +10,7 @@
            review="review.cyanogenmod.org" />
 
   <remote  name="to"
-           fetch="https://github.com/treken/"
+           fetch="https://github.com/hedwig34/"
            sync-c="true"
            sync-j="4" />
 
