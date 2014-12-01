@@ -7,7 +7,7 @@
            sync-j="1" />
 
   <remote  name="cm"
-           fetch="git://github.com/CyanogenMod/"
+           fetch="git://github.com/"
            review="review.cyanogenmod.org"
            sync-c="true"
            sync-j="4" />
