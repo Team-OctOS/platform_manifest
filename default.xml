@@ -44,6 +44,7 @@
   <project path="art" name="android_art" groups="pdk" />
   <project path="bionic" name="android_bionic" groups="pdk" />
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" />
+  <project path="bootable/recovery-twrp" name="omnirom/android_bootable_recovery" remote="gh" revision="android-5.0" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="developers/build" name="platform/developers/build" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
