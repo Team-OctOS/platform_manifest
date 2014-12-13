@@ -438,7 +438,6 @@
   <project path="packages/apps/CMBugReport" name="android_packages_apps_CMBugreport" />
   <project path="packages/apps/CMFileManager" name="android_packages_apps_CMFileManager" />
   <!-- <project path="packages/apps/CMHome" name="android_packages_apps_CMHome" /> -->
-  <project path="packages/apps/CMUpdater" name="android_packages_apps_CMUpdater" />
   <project path="packages/apps/CMWallpapers" name="android_packages_apps_CMWallpapers" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" />
   <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" />
