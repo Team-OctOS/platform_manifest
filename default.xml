@@ -22,6 +22,11 @@
            sync-c="true"
            sync-j="4" />
 
+  <remote  name="ad"
+           fetch="git://github.com/ArchiDroid/"
+           sync-c="true"
+           sync-j="4" />
+
   <remote  name="to"
            fetch="https://github.com/Team-OctOS/"
            review="review.teamoctos.com"
