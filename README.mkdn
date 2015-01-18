@@ -93,7 +93,7 @@ Enter the following to download the "repo" binary and make it executable:
 You may need to reboot for these changes to take effect. 
 Now enter the following to initialize the repository:
 
-Install External Libraries needs for Building
+Install External Libraries Needed for Building
 ---------------------------------------------
 These libraries are needed for building, but not installed by default or carried by the ROM.
 
