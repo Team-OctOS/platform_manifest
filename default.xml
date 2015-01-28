@@ -27,6 +27,11 @@
            sync-c="true"
            sync-j="4" />
 
+  <remote  name="jl"
+           fetch="git://github.com/jlask/"
+           sync-c="true"
+           sync-j="4" />
+
   <remote  name="to"
            fetch="https://github.com/Team-OctOS/"
            review="review.teamoctos.com"
