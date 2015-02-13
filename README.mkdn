@@ -110,7 +110,7 @@ Set the Team OctOs environmental flags - Add these to the bottom of ~/.bashrc
 
     # OctOs Build Flags
     export CCACHE_DIR=$HOME/.ccache
-    export CCACHE_PATH=$HOME/octkk/prebuilts/misc/linux-x86/ccache/
+    export CCACHE_PATH=$HOME/octos/prebuilts/misc/linux-x86/ccache/
     export USE_CCACHE=1
     export USE_PREBUILT_CHROMIUM=1
 
