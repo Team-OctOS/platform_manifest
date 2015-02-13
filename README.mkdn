@@ -97,7 +97,36 @@ Install External Libraries Needed for Building
 ---------------------------------------------
 These libraries are needed for building, but not installed by default or carried by the ROM.
 
-    sudo apt-get install liblz4-tool
+Ensure System is up-to-date and add libraries needed that are not included in stock Linux
+
+    sudo apt-get update && sudo apt-get upgrade
+    sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev libexpat-dev python-dev liblz4-tool
+
+Required when using SaberMOD's toolchain
+
+    wget https://github.com/SaberMod/prebuilts_cloog_isl/archive/master.zip -O prebuilts_cloog_isl-master.zip && unzip prebuilts_cloog_isl-master.zip && sudo cp -R prebuilts_cloog_isl-master/lib/* -f /usr/lib/x86_64-linux-gnu && sudo ln -s /usr/include/asm-generic /usr/include/asm
+
+Set the Team OctOs environmental flags - Add these to the bottom of ~/.bashrc
+
+    # OctOs Build Flags
+    export CCACHE_DIR=$HOME/.ccache
+    export CCACHE_PATH=$HOME/octkk/prebuilts/misc/linux-x86/ccache/
+    export USE_CCACHE=1
+    export USE_PREBUILT_CHROMIUM=1
+
+    alias git-pl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+    #set up ccache if not present
+    if [ ! -d "$CCACHE_DIR" ]; then
+        ccache -M 50G  | tee -a $ROM_BUILD_LOG
+    fi
+
+The below flag(s) are OPTIONAL
+  
+    export TO_OR=xx
+
+The TO_OR variable allows the user to set the concurrent threads when builds (-j#).
+If it is not set, it will be automatically set to the number of CPU cores available to the system.
 
 Initialize the Repositories
 ---------------------------
