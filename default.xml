@@ -23,27 +23,10 @@
            sync-c="true"
            sync-j="4" />
 
-  <remote  name="ad"
-           fetch="git://github.com/ArchiDroid/"
-           sync-c="true"
-           sync-j="4" />
-
-  <remote  name="jl"
-           fetch="git://github.com/jlask/"
-           sync-c="true"
-           sync-j="4" />
-
   <remote  name="to"
            fetch="https://github.com/Team-OctOS/"
            review="review.teamoctos.com"
            revision="refs/heads/to-5.1"
-           sync-c="true"
-           sync-j="4" />
-
-  <remote  name="bitbucket"
-           fetch="https://bitbucket.org/teamoctos/"
-           review="review.teamoctos.com"
-           revision="refs/heads/to-5.0"
            sync-c="true"
            sync-j="4" />
 
@@ -61,7 +44,7 @@
   <project path="abi/cpp" name="android_abi_cpp" groups="pdk" />
   <project path="art" name="android_art" groups="pdk" />
   <project path="bionic" name="android_bionic" groups="pdk" />
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="cm" revision="cm-12.0" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" />
   <project path="bootable/recovery-twrp" name="omnirom/android_bootable_recovery" remote="gh" revision="android-5.0" />
   <project path="bootable/recovery-philz" name="PhilZ-cwm6/philz_touch_cwm6" remote="gh" revision="cm-12.0" />
   <project path="cts" name="android_cts" groups="cts,pdk-cw-fs" />
@@ -365,8 +348,8 @@
   <project path="external/zip" name="android_external_zip" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="to" revision="to-5.0" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="to" revision="to-5.0" />
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="to" revision="to-5.1" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="to" revision="to-5.1" />
   <project path="frameworks/compile/libbcc" name="android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="android_frameworks_compile_slang" groups="pdk" />
@@ -478,7 +461,7 @@
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Provision" name="android_packages_apps_Provision" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="to" revision="to-5.0" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="to" revision="to-5.1" />
   <project path="packages/apps/SmartCardService" name="android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="android_packages_apps_SpeechRecorder" />
@@ -507,16 +490,16 @@
   <project path="packages/services/Mms" name="android_packages_services_Mms" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" />
-  <project path="packages/themes/OctInkDark" name="platform_packages_themes_OctInkDark" remote="to" revision="to-5.0" />
-  <project path="packages/wallpapers/BlueBalls" name="platform_packages_wallpapers_BlueBalls" remote="to" revision="to-5.0" />
+  <project path="packages/themes/OctInkDark" name="platform_packages_themes_OctInkDark" remote="to" revision="to-5.1" />
+  <project path="packages/wallpapers/BlueBalls" name="platform_packages_wallpapers_BlueBalls" remote="to" revision="to-5.1" />
   <project path="packages/wallpapers/Galaxy4" name="android_packages_wallpapers_Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="android_packages_wallpapers_HoloSpiral" />
   <project path="packages/wallpapers/LivePicker" name="android_packages_wallpapers_LivePicker" />
   <project path="packages/wallpapers/MusicVisualization" name="android_packages_wallpapers_MusicVisualization" />
   <project path="packages/wallpapers/NoiseField" name="android_packages_wallpapers_NoiseField" />
-  <project path="packages/wallpapers/OctPapers" name="platform_packages_wallpapers_OctPapers" remote="to" revision="to-5.0" />
-  <project path="packages/wallpapers/OctPhase" name="platform_packages_wallpapers_OctPhase" remote="to" revision="to-5.0" />
-  <project path="packages/wallpapers/OctSun" name="platform_packages_wallpapers_OctSun" remote="to" revision="to-5.0" />
+  <project path="packages/wallpapers/OctPapers" name="platform_packages_wallpapers_OctPapers" remote="to" revision="to-5.1" />
+  <project path="packages/wallpapers/OctPhase" name="platform_packages_wallpapers_OctPhase" remote="to" revision="to-5.1" />
+  <project path="packages/wallpapers/OctSun" name="platform_packages_wallpapers_OctSun" remote="to" revision="to-5.1" />
   <project path="packages/wallpapers/PhaseBeam" name="android_packages_wallpapers_PhaseBeam" />
   <project path="packages/wallpapers/PhotoPhase" name="android_packages_wallpapers_PhotoPhase" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" />
@@ -550,10 +533,8 @@
   <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" groups="pdk,darwin,x86" remote="aosp" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" groups="pdk,linux,arm" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" remote="aosp" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-sm" name="platform_arm-eabi-4.9-sm"  groups="pdk,linux,arm" remote="bitbucket" revision="to-5.0" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" remote="aosp" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-sm" name="platform_arm-linux-androideabi-4.8-sm" groups="pdk,linux,arm"  remote="to" revision="to-5.0" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" remote="aosp" />
