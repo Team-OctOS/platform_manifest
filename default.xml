@@ -36,7 +36,7 @@
   <remote  name="to"
            fetch="https://github.com/Team-OctOS/"
            review="review.teamoctos.com"
-           revision="refs/heads/to-5.0"
+           revision="refs/heads/to-5.1"
            sync-c="true"
            sync-j="4" />
 
@@ -56,7 +56,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="manifest" name="platform_manifest" remote="to" revision="to-5.0" />
+  <project path="manifest" name="platform_manifest" remote="to" revision="to-5.1" />
 
   <project path="abi/cpp" name="android_abi_cpp" groups="pdk" />
   <project path="art" name="android_art" groups="pdk" />
@@ -594,5 +594,5 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
-  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="to-5.0" />
+  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="to-5.1" />
 </manifest>
