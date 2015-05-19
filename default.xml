@@ -377,7 +377,7 @@
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="android_frameworks_opt_photoviewer" />
   <project path="frameworks/opt/setupwizard" name="android_frameworks_opt_setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="to" revision="to-5.1" />
   <project path="frameworks/opt/timezonepicker" name="android_frameworks_opt_timezonepicker" />
   <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp" />
