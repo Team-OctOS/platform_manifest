@@ -2,7 +2,34 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-5.1.1_r9"
+           sync-j="4" />
+
+  <remote  name="cm"
+           fetch="git://github.com/CyanogenMod/"
+           review="review.cyanogenmod.org"
+           sync-c="true"
+           sync-j="4" />
+
+  <remote  name="gh"
+           fetch="git://github.com/"
+           sync-c="true"
+           sync-j="4" />
+
+  <remote  name="tm"
+           fetch="git://github.com/TheMuppets/"
+           sync-c="true"
+           sync-j="4" />
+
+  <remote  name="to"
+           fetch="https://github.com/Team-OctOS/"
+           review="review.teamoctos.com"
+           revision="refs/heads/to-5.1-aosp"
+           sync-c="true"
+           sync-j="4" />
+
   <default revision="refs/tags/android-5.1.1_r9"
            remote="aosp"
            sync-j="4" />
