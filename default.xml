@@ -541,6 +541,7 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+  <project path="vendor/motorola/shamu" name="proprietary_vendor_motorola_shamu" remote="to" revision="to-5.1-aosp" />
   <project path="vendor/to" name="platform_vendor_to" remote="to" revision="to-5.1-aosp" />
 
 </manifest>
