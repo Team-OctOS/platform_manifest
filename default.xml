@@ -556,7 +556,9 @@
   <project path="vendor/widevine/grouper" name="proprietary_vendor_widevine_grouper" remote="to" revision="to-5.1-aosp" />
 
   <!-- hammerhead -->
+  <project path="vendor/broadcom/hammerhead" name="proprietary_vendor_broadcom_hammerhead" remote="to" revision="to-5.1-aosp" />
   <project path="vendor/lge/hammerhead" name="proprietary_vendor_lge_hammerhead" remote="to" revision="to-5.1-aosp" />
+  <project path="vendor/qcom/hammerhead" name="proprietary_vendor_qcom_hammerhead" remote="to" revision="to-5.1-aosp" />
 
   <!-- shamu -->
   <project path="vendor/motorola/shamu" name="proprietary_vendor_motorola_shamu" remote="to" revision="to-5.1-aosp" />
