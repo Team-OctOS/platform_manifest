@@ -52,13 +52,6 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" groups="pdk-cw-fs" />
-  <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
-  <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
-  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" clone-depth="1" />
-  <project path="device/asus/fugu" name="device/asus/fugu" groups="device,fugu" />
-  <project path="device/asus/fugu-kernel" name="device/asus/fugu-kernel" groups="device,fugu" clone-depth="1" />
-  <project path="device/asus/grouper" name="platform_device_asus_grouper" groups="device,grouper" remote="to" revision="to-5.1-aosp" />
-  <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
@@ -75,17 +68,7 @@
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
-  <project path="device/htc/flounder" name="device/htc/flounder" groups="device,flounder" />
-  <project path="device/htc/flounder-kernel" name="device/htc/flounder-kernel" groups="device,flounder" clone-depth="1" />
-  <project path="device/lge/hammerhead" name="platform_device_lge_hammerhead" groups="device,hammerhead" remote="to" revision="to-5.1-aosp" />
-  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" clone-depth="1" />
-  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
-  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" clone-depth="1" />
-  <project path="device/moto/shamu" name="platform_device_moto_shamu" groups="device,shamu" remote="to" revision="to-5.1-aosp" />
-  <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -543,27 +526,6 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-
-  <!-- vendor files -->
-
-  <!-- grouper -->
-  <project path="vendor/asus/grouper" name="proprietary_vendor_asus_grouper" remote="to" revision="to-5.1-aosp" />
-  <project path="vendor/broadcom/grouper" name="proprietary_vendor_broadcom_grouper" remote="to" revision="to-5.1-aosp" />
-  <project path="vendor/elan/grouper" name="proprietary_vendor_elan_grouper" remote="to" revision="to-5.1-aosp" />
-  <project path="vendor/invensense/grouper" name="proprietary_vendor_invensense_grouper" remote="to" revision="to-5.1-aosp" />
-  <project path="vendor/nvidia/grouper" name="proprietary_vendor_nvidia_grouper" remote="to" revision="to-5.1-aosp" />
-  <project path="vendor/nxp/grouper" name="proprietary_vendor_nxp_grouper" remote="to" revision="to-5.1-aosp" />
-  <project path="vendor/widevine/grouper" name="proprietary_vendor_widevine_grouper" remote="to" revision="to-5.1-aosp" />
-
-  <!-- hammerhead -->
-  <project path="vendor/broadcom/hammerhead" name="proprietary_vendor_broadcom_hammerhead" remote="to" revision="to-5.1-aosp" />
-  <project path="vendor/lge/hammerhead" name="proprietary_vendor_lge_hammerhead" remote="to" revision="to-5.1-aosp" />
-  <project path="vendor/qcom/hammerhead" name="proprietary_vendor_qcom_hammerhead" remote="to" revision="to-5.1-aosp" />
-
-  <!-- shamu -->
-  <project path="vendor/motorola/shamu" name="proprietary_vendor_motorola_shamu" remote="to" revision="to-5.1-aosp" />
-
-  <!-- octos -->
   <project path="vendor/to" name="platform_vendor_to" remote="to" revision="to-5.1-aosp" />
 
 </manifest>
