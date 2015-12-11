@@ -1,50 +1,162 @@
-CyanogenMod
-===========
-
-Submitting Patches
-------------------
-Patches are always welcome!  Please submit your patches via CyanogenMod Gerrit!
-You can do this by using these commands:
-
-    (From root android directory)
-    . build/envsetup.sh
-    (Go to repo you are patching, make your changes and commit)
-    cmgerrit <for(new)/changes(patch set)> <branch/change-id> 
-
-    repo start cm-13.0 .
-    (Make your changes and commit)
-    repo upload .
-Note: "." meaning current directory
-For more help on using this tool, use this command: repo help upload
-
-Make your changes and commit with a detailed message, starting with what you are working with (i.e. vision: Update Kernel)
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
-
-To view the status of your and others' patches, visit [CyanogenMod Code Review](http://review.cyanogenmod.org/)
-
+Team-OctOS Android Source
+=========================
 
 Getting Started
 ---------------
 
-To get started with Android/CyanogenMod, you'll need to get
-familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+To get started with the Team-OctOS sources, you'll need to get
+familiar with [Git and Repo](http://source.android.com/source/version-control.html).
 
-To initialize your local repository using the CyanogenMod trees, use a command like this:
 
-    repo init -u git://github.com/CyanogenMod/android.git -b cm-13.0
+Creating Your SSH Keys
+----------------------
 
-Then to sync up:
+Check to see if you already have existing SSH Keys.
 
-    repo sync
+    ls ~/.ssh
 
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
+By default, SSH Keys are saved as: id_rsa and id_rsa.pub
 
-For more information on this Github Organization and how it is structured, 
-please [read the wiki article](http://wiki.cyanogenmod.org/w/Github_Organization)
+If you do NOT have these files, continue.  If you DO have these, skip the next
+step!
 
-Buildbot
---------
+Note: If you already have existing SSH Keys, doing this will overwrite them! 
 
-All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
+    cd ~
+    ssh-keygen -t rsa
 
-You can view the current build statuses at [CyanogenMod Jenkins](http://jenkins.cyanogenmod.org/)
+It will ask you where to store the key (defaults to ~/.ssh/id_rsa) and will ask if you
+wish to enter a password.  If you enter a password, you will need to enter this EVERY
+TIME.
+
+
+Registering Your SSH Keys
+-------------------------
+
+We recommend (and will assume) that you are using your SSH Keys for GitHub and Gerrit
+review.
+
+    cat ~/.ssh/id_rsa.pub
+
+This will display your PUBLIC SSH Key.  This is what you will put on GitHub and Gerrit,
+and will be used to identify you to those services.
+
+Please see GitHub's [Step 3: Add your SSH key to GitHub](https://help.github.com/articles/generating-ssh-keys/#step-3-add-your-ssh-key-to-github)
+to add your key to your account.
+
+
+Creating your SSH Config File
+-----------------------------
+
+After creating your SSH Key, you will need to create a configuration file so the system
+will know to use these keys automatically.
+
+Open your ~/.ssh/config file in your favorite editor (nano, gedit, vim, etc).
+
+    nano ~/.ssh/config
+
+and add the following code blocks.
+
+    Host review.teamoctos.com
+        User <Gerrit_UserName>
+        IdentityFile ~/.ssh/id_rsa
+        StrictHostKeyChecking no
+        UserKnownHostsFile /dev/null
+    Host github.com
+        User <GitHub_Registered_Email>
+        IdentityFile ~/.ssh/id_rsa
+        StrictHostKeyChecking no
+        UserKnownHostsFile /dev/null
+
+and then save.  This will allow your system to automatically supply your SSH key when
+connecting to these hosts.
+
+
+Create the Directories
+----------------------
+
+You will need to set up some directories in your build environment.
+
+To create them run:
+
+    mkdir -p ~/bin
+    mkdir -p ~/octos
+
+
+Install the Repository Binary
+-----------------------------
+
+Enter the following to download the "repo" binary and make it executable:
+
+    curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
+
+You may need to reboot for these changes to take effect. 
+Now enter the following to initialize the repository:
+
+Install External Libraries Needed for Building
+---------------------------------------------
+These libraries are needed for building, but not installed by default or carried by the ROM.
+
+Ensure System is up-to-date and add libraries needed that are not included in stock Linux
+
+    sudo apt-get update && sudo apt-get upgrade
+    sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev libexpat-dev python-dev liblz4-tool
+
+Required when using SaberMOD's toolchain
+
+    wget https://github.com/SaberMod/prebuilts_cloog_isl/archive/master.zip -O prebuilts_cloog_isl-master.zip && unzip prebuilts_cloog_isl-master.zip && sudo cp -R prebuilts_cloog_isl-master/lib/* -f /usr/lib/x86_64-linux-gnu && sudo ln -s /usr/include/asm-generic /usr/include/asm
+
+Set the Team OctOs environmental flags - Add these to the bottom of ~/.bashrc
+
+    # OctOs Build Flags
+    export CCACHE_DIR=$HOME/.ccache
+    export USE_CCACHE=1
+    export USE_PREBUILT_CHROMIUM=1
+
+    alias git-pl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+    #set up ccache if not present
+    if [ ! -d "$CCACHE_DIR" ]; then
+        $HOME/octos/prebuilts/misc/linux-x86/ccache/ccache -M 50G
+    fi
+
+The below flag(s) are OPTIONAL
+  
+    export TO_OR=xx
+
+The TO_OR variable allows the user to set the concurrent threads when builds (-j#).
+If it is not set, it will be automatically set to the number of CPU cores available to the system.
+
+Initialize the Repositories
+---------------------------
+
+    cd ~/octos
+    repo init -u https://github.com/Team-OctOS/platform_manifest.git -b oct-mm && repo sync
+
+This will initialize the new repository and begin the initial sync.  This will take a while!
+
+
+Building the System
+---------------
+
+Initialize the environment with the envsetup.sh script. 
+Note: Replacing "source" with a single dot saves a few characters, and the short form is more commonly used in documentation.
+
+    . build/envsetup.sh
+    brunch
+
+Enter the number of the build you want to start and press enter
+
+The first time you build a device, the system will identify and fetch the required device repos.
+
+
+Submitting Patches
+------------------
+Patches are always welcome!  Please submit your patches via Team-OctOS Gerrit!
+
+    <This section to be filled in at a later time>
+
+Make your changes and commit with a detailed message, starting with what you are working with (i.e. vision: Update Kernel)
+Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
+
+To view the status of your and others' patches, visit [Team-OctOS Code Review](http://review.teamoctos.com:8080)
