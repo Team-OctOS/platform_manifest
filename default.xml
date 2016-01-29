@@ -53,6 +53,7 @@
   <project path="packages/apps/FileManager" name="platform_packages_apps_FileManager" remote="to" revision="oct-mm" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="oct" revision="oct-mm" />
   <project path="packages/wallpapers/BlueBalls" name="platform_packages_wallpapers_BlueBalls" remote="to" revision="oct-mm" />
+  <project path="jet" name="platform_jet" remote="oct" revision="oct-mm" />
   <project path="vendor/to" name="platform_vendor_to" remote="oct" revision="oct-mm" />
   <project path="vendor/cm/sepolicy/qcom" name="platform_vendor_cm_sepolicy_qcom" remote="to" revision="oct-mm" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-mm" />
