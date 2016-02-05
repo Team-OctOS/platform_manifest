@@ -44,6 +44,7 @@
 
   <project path="manifest" name="platform_manifest" remote="to" revision="oct-mm" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="to" revision="oct-mm" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="to" revision="oct-mm" />
   <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="oct-mm" />
   <project path="packages/apps/FileManager" name="platform_packages_apps_FileManager" remote="to" revision="oct-mm" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="oct-mm" />
@@ -186,7 +187,6 @@
   <project path="frameworks/opt/net/wifi" name="CyanogenMod/android_frameworks_opt_net_wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="CyanogenMod/android_frameworks_opt_photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="CyanogenMod/android_frameworks_opt_setupwizard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/telephony" name="CyanogenMod/android_frameworks_opt_telephony" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="CyanogenMod/android_frameworks_opt_timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" groups="pdk" />
