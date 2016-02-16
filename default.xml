@@ -50,6 +50,7 @@
   <project path="packages/apps/LockClock" name="platform_packages_apps_LockClock" remote="to" revision="oct-mm" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="oct-mm" />
   <project path="packages/wallpapers/BlueBalls" name="platform_packages_wallpapers_BlueBalls" remote="to" revision="oct-mm" />
+  <project path="prebuilts/misc" name="platform_prebuilts_misc" groups="pdk" remote="to" revision="oct-mm" />
   <project path="vendor/to" name="platform_vendor_to" remote="to" revision="oct-mm" />
   <project path="vendor/cm/sepolicy/qcom" name="platform_vendor_cm_sepolicy_qcom" remote="to" revision="oct-mm" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-mm" />
@@ -565,7 +566,6 @@
   <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
   <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
   <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
