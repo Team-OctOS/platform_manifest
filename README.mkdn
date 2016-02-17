@@ -131,7 +131,7 @@ Initialize the Repositories
 ---------------------------
 
     cd ~/octos
-    repo init -u https://github.com/Team-OctOS/platform_manifest.git -b oct-mm && repo sync
+    repo init -u https://github.com/Oct-mm/platform_manifest.git -b oct-mm && repo sync
 
 This will initialize the new repository and begin the initial sync.  This will take a while!
 

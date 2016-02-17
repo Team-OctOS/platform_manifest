@@ -31,6 +31,11 @@
            sync-c="true"
            sync-j="4" />
 
+ <remote  name="oct"
+           fetch="https://github.com/Oct-mm/"
+           sync-c="true"
+           sync-j="4" />
+
   <default revision="refs/heads/cm-13.0"
            remote="github"
            sync-c="true"
@@ -42,7 +47,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="manifest" name="platform_manifest" remote="to" revision="oct-mm" />
+  <project path="manifest" name="platform_manifest" remote="oct" revision="oct-mm" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="to" revision="oct-mm" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="to" revision="oct-mm" />
   <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="oct-mm" />
@@ -54,6 +59,7 @@
   <project path="vendor/to" name="platform_vendor_to" remote="to" revision="oct-mm" />
   <project path="vendor/cm/sepolicy/qcom" name="platform_vendor_cm_sepolicy_qcom" remote="to" revision="oct-mm" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-mm" />
+  <project path="jet" name="platform_jet" remote="oct" revision="oct-mm" />
 
 <!-- END OCTOS -->
 
