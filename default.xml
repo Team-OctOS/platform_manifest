@@ -57,7 +57,8 @@
   <project path="vendor/cm/sepolicy/qcom" name="platform_vendor_cm_sepolicy_qcom" remote="to" revision="oct-mm" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-mm" />
   <project path="jet" name="platform_jet" remote="oct" revision="oct-mm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="oct" revision="oct-mm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"  clone-depth="1" remote="oct" revision="oct-mm" />
+  
 <!-- END OCTOS -->
 
 <!-- BEGIN CYANOGENMOD -->
