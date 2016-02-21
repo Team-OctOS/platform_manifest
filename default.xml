@@ -48,6 +48,7 @@
   <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="oct-mm" />
   <project path="packages/apps/FileManager" name="platform_packages_apps_FileManager" remote="to" revision="oct-mm" />
   <project path="packages/apps/LockClock" name="platform_packages_apps_LockClock" remote="to" revision="oct-mm" />
+  <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="to" revision="oct-mm" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="oct-mm" />
   <project path="packages/wallpapers/BlueBalls" name="platform_packages_wallpapers_BlueBalls" remote="to" revision="oct-mm" />
   <project path="prebuilts/misc" name="platform_prebuilts_misc" groups="pdk" remote="to" revision="oct-mm" />
