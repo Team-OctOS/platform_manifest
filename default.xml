@@ -36,11 +36,6 @@
            sync-c="true"
            sync-j="4" />
 
- <remote  name="bb"
-           fetch="https://bitbucket.org/bthorne79/"
-           sync-c="true"
-           sync-j="4" />
-
   <default revision="refs/heads/cm-13.0"
            remote="github"
            sync-c="true"
@@ -63,8 +58,8 @@
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-mm" />
   <project path="jet" name="platform_jet" remote="oct" revision="oct-mm" />
   <!--project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9"  clone-depth="1" remote="oct" revision="oct-mm" /-->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="bb" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" clone-depth="1" remote="oct" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" clone-depth="1" remote="oct" revision="oct-mm" />
 
 <!-- END OCTOS -->
 
