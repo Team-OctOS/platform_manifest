@@ -1,6 +1,6 @@
 Team-OctOS Android Source
 =========================
-
+THIS IS JUST A PLAYGROUND NOT ALWAYS IS IT UP TO DATE WITH TEAM OCTOS SOURCE 
 Getting Started
 ---------------
 
