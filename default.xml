@@ -13,6 +13,9 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote  name="bitbucket"
+           fetch="https://bitbucket.org" />
+
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod/"
            review="review.cyanogenmod.org"
@@ -57,6 +60,19 @@
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-mm" />
 
 <!-- END OCTOS -->
+
+<!-- BEGIN TOOLCHAINS -->
+  <!-- SABERMOD ROM TOOLCHAIN -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-sm" name="xanaxdroid/arm-linux-androideabi-4.9" remote="bitbucket" revision="sabermod" />
+  <!-- SAMBERMOD KERNEL TOOLCHAIN -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-sm" name="xanaxdroid/arm-eabi-4.8" remote="bitbucket" revision="sabermod" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-sm" name="xanaxdroid/arm-eabi-4.9" remote="bitbucket" revision="sabermod" />
+   <!-- UBER ROM TOOLCHAIN -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
+  <!-- UBER KERNEL TOOLCHAIN -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-uber" name="UBERTC/arm-eabi-4.8" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master" />
+<!-- END TOOLCHAINS -->
 
 <!-- BEGIN CYANOGENMOD -->
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
