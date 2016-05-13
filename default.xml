@@ -51,6 +51,7 @@
   <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="oct-mm" />
   <project path="packages/apps/FileManager" name="platform_packages_apps_FileManager" remote="to" revision="oct-mm" />
   <project path="packages/apps/KernelAdiutor" name="platform_packages_apps_KernelAdiutor" remote="to" revision="oct-mm" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="to" revision="oct-mm" />
   <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="to" revision="oct-mm" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="oct-mm" />
   <project path="packages/providers/OpenWeatherMapProvider" name="platform_packages_apps_OpenWeatherMapProvider" remote="to" revision="oct-mm" />
@@ -514,7 +515,6 @@
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" remote="aosp" groups="pdk-fs" revision="refs/tags/android-6.0.1_r18" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" remote="aosp" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" remote="aosp" groups="pdk-fs" />
-  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" remote="aosp" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" />
   <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" remote="aosp" groups="pdk-fs" />
