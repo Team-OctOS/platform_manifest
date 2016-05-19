@@ -51,7 +51,7 @@
   <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="oct-mm" />
   <project path="packages/apps/FileManager" name="platform_packages_apps_FileManager" remote="to" revision="oct-mm" />
   <project path="packages/apps/KernelAdiutor" name="platform_packages_apps_KernelAdiutor" remote="to" revision="oct-mm" />
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="to" revision="oct-mm" />
+  <project path="packages/apps/LTMLauncher" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="to" revision="oct-mm" />
   <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="to" revision="oct-mm" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="oct-mm" />
   <project path="packages/providers/OpenWeatherMapProvider" name="platform_packages_apps_OpenWeatherMapProvider" remote="to" revision="oct-mm" />
