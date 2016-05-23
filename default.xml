@@ -252,6 +252,7 @@
   <project path="packages/apps/Dialer" name="CyanogenMod/android_packages_apps_Dialer" groups="pdk-fs" />
   <project path="packages/apps/Eleven" name="CyanogenMod/android_packages_apps_Eleven" groups="pdk-fs" />
   <project path="packages/apps/FMRadio" name="CyanogenMod/android_packages_apps_FMRadio" groups="pdk-fs" />
+  <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" groups="pdk-fs" />
   <project path="packages/apps/Gello" name="CyanogenMod/android_packages_apps_Gello" />
   <project path="packages/apps/InCallUI" name="CyanogenMod/android_packages_apps_InCallUI" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="CyanogenMod/android_packages_apps_KeyChain" groups="pdk-fs" />
@@ -513,7 +514,6 @@
   <project path="packages/apps/Email" name="platform/packages/apps/Email" remote="aosp" groups="pdk-fs"/>
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" remote="aosp" groups="pdk-fs"/>
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" remote="aosp" groups="pdk-fs" revision="refs/tags/android-6.0.1_r18" />
-  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" remote="aosp" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" remote="aosp" groups="pdk-fs" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" remote="aosp" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" />
