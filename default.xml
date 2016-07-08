@@ -58,9 +58,11 @@
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-fs" remote="to" revision="oct-mm" />
   <project path="packages/wallpapers/BlueBalls" name="platform_packages_wallpapers_BlueBalls" remote="to" revision="oct-mm" />
   <project path="prebuilts/misc" name="platform_prebuilts_misc" groups="pdk" remote="to" revision="oct-mm" />
-  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="oct-mm" />
   <project path="vendor/cm/sepolicy/qcom" name="platform_vendor_cm_sepolicy_qcom" remote="to" revision="oct-mm" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-mm" />
+  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="oct-mm" />
+	<copyfile src="tools/build-octos.sh" dest="build-octos.sh" />
+  </project>
 
 <!-- END OCTOS -->
 
