@@ -308,6 +308,7 @@
   <project path="packages/services/Mms" name="CyanogenMod/android_packages_services_Mms" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Telecomm" name="CyanogenMod/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/ThemeManagerService" name="CyanogenMod/android_packages_services_ThemeManagerService" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/services/WeatherService" name="CyanogenMod/android_packages_services_WeatherService" groups="pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/cmsdk" name="CyanogenMod/android_prebuilts_cmsdk" revision="master" />
   <project path="system/bt" name="CyanogenMod/android_system_bt" groups="pdk" />
   <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" />
