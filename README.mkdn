@@ -1,0 +1,31 @@
+AOSP Android Source
+=========================
+
+Create the Directories
+----------------------
+
+You will need to set up some directories in your build environment.
+
+To create them run:
+
+    mkdir -p ~/bin
+    mkdir -p ~/aosp
+
+
+Install the Repository Binary
+-----------------------------
+
+Enter the following to download the "repo" binary and make it executable:
+
+    curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
+
+You may need to reboot for these changes to take effect. 
+Now enter the following to initialize the repository:
+
+Initialize the Repositories
+---------------------------
+
+    cd ~/octos
+    repo init -u https://github.com/hedwig34/platform_manifest.git -b aosp-7.0 && repo sync
+
+This will initialize the new repository and begin the initial sync.  This will take a while!
