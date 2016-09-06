@@ -2,11 +2,25 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-7.0.0_r1"
+           sync-j="4" />
+
+  <remote  name="gh"
+           fetch="git://github.com/"
+           sync-c="true"
+           sync-j="4" />
+
   <default revision="refs/tags/android-7.0.0_r1"
            remote="aosp"
            sync-j="4" />
 
+<!-- BEGIN CUSTOM -->
+  <project path="manifest" name="hedwig34/platform_manifest" remote="gh" revision="aosp-7.0" />
+<!-- END CUSTOM -->
+
+<!-- BEGIN AOSP -->
   <project path="build" name="platform/build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -531,5 +545,6 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+<!-- END AOSP -->
 
 </manifest>
