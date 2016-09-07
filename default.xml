@@ -17,13 +17,14 @@
            sync-j="4" />
 
 <!-- BEGIN CUSTOM -->
+  <project path="build" name="hedwig34/platform_build" groups="pdk,tradefed" remote="gh" revision="aosp-7.0" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
   <project path="manifest" name="hedwig34/platform_manifest" remote="gh" revision="aosp-7.0" />
 <!-- END CUSTOM -->
 
 <!-- BEGIN AOSP -->
-  <project path="build" name="platform/build" groups="pdk,tradefed" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
