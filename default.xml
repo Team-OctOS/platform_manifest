@@ -21,6 +21,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="cm-13.0" />
   <project path="manifest" name="hedwig34/platform_manifest" remote="gh" revision="aosp-7.0" />
   <project path="vendor/to" name="hedwig34/platform_vendor_to" remote="gh" revision="aosp-7.0" />
 <!-- END CUSTOM -->
