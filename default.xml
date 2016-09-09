@@ -31,6 +31,8 @@
   <project path="external/busybox" name="PureNexusProject/android_external_busybox" remote="gh" revision="n" />
   <project path="manifest" name="platform_manifest" remote="to" revision="aosp-7.0" />
   <project path="vendor/to" name="platform_vendor_to" remote="to" revision="aosp-7.0" />
+
+  <project path="vendor/moto" name="proprietary_vendor_moto" remote="to" revision="aosp-7.0" />
 <!-- END OCTOS -->
 
 <!-- BEGIN AOSP -->
