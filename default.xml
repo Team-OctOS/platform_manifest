@@ -32,7 +32,7 @@
   <project path="external/busybox" name="platform_external_busybox" remote="to" revision="aosp-7.0" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.0" />
   <project path="manifest" name="platform_manifest" remote="to" revision="aosp-7.0" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs"remote="to" revision="aosp-7.0" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="aosp-7.0" />
   <project path="vendor/moto" name="proprietary_vendor_moto" remote="to" revision="aosp-7.0" />
   <project path="vendor/to" name="platform_vendor_to" remote="to" revision="aosp-7.0" />
 
