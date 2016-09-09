@@ -28,11 +28,12 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
+  <project path="device/moto/shamu" name="platform_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="to" revision="aosp-7.0" />
   <project path="external/busybox" name="PureNexusProject/android_external_busybox" remote="gh" revision="n" />
   <project path="manifest" name="platform_manifest" remote="to" revision="aosp-7.0" />
+  <project path="vendor/moto" name="proprietary_vendor_moto" remote="to" revision="aosp-7.0" />
   <project path="vendor/to" name="platform_vendor_to" remote="to" revision="aosp-7.0" />
 
-  <project path="vendor/moto" name="proprietary_vendor_moto" remote="to" revision="aosp-7.0" />
 <!-- END OCTOS -->
 
 <!-- BEGIN AOSP -->
@@ -85,7 +86,6 @@
   <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" />
   <project path="device/linaro/hikey" name="device/linaro/hikey" />
   <project path="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel" />
-  <project path="device/moto/shamu" name="device/moto/shamu" groups="device,shamu,broadcom_pdk" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
