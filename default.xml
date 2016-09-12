@@ -39,6 +39,7 @@
   <project path="manifest" name="platform_manifest" remote="to" revision="aosp-7.0" />
   <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" groups="pdk-fs" remote="to" revision="aosp-7.0" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="aosp-7.0" />
+  <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="to" revision="aosp-7.0" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="to" revision="aosp-7.0" />
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="to" revision="aosp-7.0" />
   <project path="vendor/huawei" name="platform_vendor_huawei" remote="to" revision="aosp-7.0" />
