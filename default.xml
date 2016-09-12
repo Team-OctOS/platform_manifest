@@ -27,11 +27,13 @@
   <project path="build" name="platform_build" groups="pdk,tradefed" remote="to" revision="aosp-7.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  
+  <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="to" revision="aosp-7.0" />
   <project path="device/huawei/angler" name="platform_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="to" revision="aosp-7.0" />
   <project path="device/lge/bullhead" name="platform_device_lge_bullhead" groups="device,bullhead,broadcom_pdk" remote="to" revision="aosp-7.0" />
+  <project path="art" name="platform_art" groups="pdk" remote="to" revision="aosp-7.0" />
   <project path="device/moto/shamu" name="platform_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="to" revision="aosp-7.0" />
   <project path="external/busybox" name="platform_external_busybox" remote="to" revision="aosp-7.0" />
+  <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="to" revision="aosp-7.0" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.0" />
   <project path="manifest" name="platform_manifest" remote="to" revision="aosp-7.0" />
   <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" groups="pdk-fs" remote="to" revision="aosp-7.0" />
@@ -47,13 +49,11 @@
 
 <!-- BEGIN AOSP -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
-  <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
@@ -294,7 +294,6 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
-  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
   <project path="external/sl4a" name="platform/external/sl4a" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" />
