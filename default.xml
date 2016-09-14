@@ -41,6 +41,7 @@
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="aosp-7.0" />
   <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="to" revision="aosp-7.0" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="to" revision="aosp-7.0" />
+  <project path="platform/kernel/lge/bullhead" name="platform_kernel_lge_bullhead" groups="device,bullhead" remote="to" revision="aosp-7.0" />
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="to" revision="aosp-7.0" />
   <project path="vendor/huawei" name="platform_vendor_huawei" remote="to" revision="aosp-7.0" />
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="to" revision="aosp-7.0" />
@@ -88,7 +89,6 @@
   <project path="device/htc/flounder-kernel" name="device/htc/flounder-kernel" groups="device,flounder,broadcom_pdk" clone-depth="1" />
   <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
   <project path="device/intel/edison" name="device/intel/edison" groups="device" />
-  <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" />
   <project path="device/linaro/hikey" name="device/linaro/hikey" />
   <project path="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
