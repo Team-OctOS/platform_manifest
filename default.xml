@@ -41,6 +41,7 @@
   <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="to" revision="aosp-7.0" />
   <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="gh" revision="master" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="to" revision="aosp-7.0" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.0" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="to" revision="aosp-7.0" />
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="to" revision="aosp-7.0" />
   <project path="vendor/to" name="platform_vendor_to" remote="to" revision="aosp-7.0" />
@@ -435,7 +436,6 @@
   <project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs" />
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs" />
