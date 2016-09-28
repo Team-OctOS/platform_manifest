@@ -35,6 +35,7 @@
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="to" revision="aosp-7.0" />
   <project path="frameworks/support" name="platform_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.0" />
   <project path="manifest" name="platform_manifest" remote="to" revision="aosp-7.0" />
+  <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="aosp-7.0" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.0" />
   <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" groups="pdk-fs" remote="to" revision="aosp-7.0" />
   <project path="packages/apps/KernelAdiutor" name="platform_packages_apps_KernelAdiutor-Mod" remote="to" revision="aosp-7.0" />
