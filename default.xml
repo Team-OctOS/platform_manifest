@@ -30,6 +30,7 @@
   <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="to" revision="aosp-7.0" />
   <project path="art" name="platform_art" groups="pdk" remote="to" revision="aosp-7.0" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="to" revision="aosp-7.0" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="to" revision="aosp-7.0" />
   <project path="external/busybox" name="platform_external_busybox" remote="to" revision="aosp-7.0" />
   <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="to" revision="aosp-7.0" />
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="to" revision="aosp-7.0" />
@@ -73,7 +74,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
