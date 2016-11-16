@@ -35,7 +35,9 @@
   <project path="bionic" name="platform_bionic" groups="pdk" remote="to" revision="oct-n" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="to" revision="oct-n" />
   <project path="external/busybox" name="platform_external_busybox" remote="to" revision="oct-n" />
+  <project path="external/llvm" name="platform_external_llvm" groups="pdk" remote="to" revision="oct-n" />
   <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="to" revision="oct-n" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="to" revision="oct-n" />
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="to" revision="oct-n" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="to" revision="oct-n" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="to" revision="oct-n" />
@@ -245,7 +247,6 @@
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs,pdk-fs" />
   <project path="external/littlemock" name="platform/external/littlemock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lld" name="platform/external/lld" groups="pdk-fs" />
-  <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lz4" name="platform/external/lz4" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
@@ -313,7 +314,6 @@
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs,pdk-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
-  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
   <project path="external/tlsdate" name="platform/external/tlsdate" />
