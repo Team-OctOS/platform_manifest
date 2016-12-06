@@ -79,6 +79,14 @@
 
 <!-- END OCTOS -->
 
+<!-- BEGIN TOOLCHAINS -->
+  <!-- UBER ROM TOOLCHAIN -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
+  <!-- UBER KERNEL TOOLCHAIN -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-uber" name="UBERTC/arm-eabi-4.8" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master" />
+<!-- END TOOLCHAINS -->
+
 <!-- BEGIN AOSP -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
