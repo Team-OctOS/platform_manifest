@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-7.1.0_r7"
+           revision="refs/tags/android-7.1.1_r4"
            sync-j="4" />
 
   <remote  name="gh"
@@ -15,67 +15,67 @@
   <remote  name="to"
            fetch="https://github.com/Team-OctOS/"
            review="review.teamoctos.com"
-           revision="refs/heads/aosp-7.1"
+           revision="refs/heads/aosp-7.1.1"
            sync-c="true"
            sync-j="4" />
 
   <remote  name="bitbucket"
            fetch="https://bitbucket.org" />
 
-  <default revision="refs/tags/android-7.1.0_r7"
+  <default revision="refs/tags/android-7.1.1_r4"
            remote="aosp"
            sync-j="4" />
 
 <!-- BEGIN OCTOS -->
-  <project path="build" name="platform_build" groups="pdk,tradefed" remote="to" revision="aosp-7.1" >
+  <project path="build" name="platform_build" groups="pdk,tradefed" remote="to" revision="aosp-7.1.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="build/blueprint" name="platform_build_blueprint" groups="pdk,tradefed" remote="to" revision="aosp-7.1" />
-  <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="to" revision="aosp-7.1" />
-  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="to" revision="aosp-7.1" >
+  <project path="build/blueprint" name="platform_build_blueprint" groups="pdk,tradefed" remote="to" revision="aosp-7.1.1" />
+  <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="to" revision="aosp-7.1.1" />
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="to" revision="aosp-7.1.1" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="art" name="platform_art" groups="pdk" remote="to" revision="aosp-7.1" />
-  <project path="bionic" name="platform_bionic" groups="pdk" remote="to" revision="aosp-7.1" />
-  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="to" revision="aosp-7.1" />
-  <project path="external/busybox" name="platform_external_busybox" remote="to" revision="aosp-7.1" />
-  <project path="external/llvm" name="platform_external_llvm" groups="pdk" remote="to" revision="aosp-7.1" />
-  <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="to" revision="aosp-7.1" />
-  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="to" revision="aosp-7.1" />
-  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="to" revision="aosp-7.1" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="to" revision="aosp-7.1" />
-  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="to" revision="aosp-7.1" />
-  <project path="frameworks/support" name="platform_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="hardware/qcom/audio" name="platform_hardware_qcom_audio" groups="qcom,qcom_audio" remote="to" revision="aosp-7.1" />
-  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" groups="qcom" remote="to" revision="aosp-7.1" />
-  <project path="hardware/qcom/display" name="platform_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="to" revision="aosp-7.1" />
-  <project path="hardware/qcom/gps" name="platform_hardware_qcom_gps" groups="qcom,qcom_gps" remote="to" revision="aosp-7.1" />
-  <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="to" revision="aosp-7.1" />
-  <project path="hardware/qcom/media" name="platform_hardware_qcom_media" groups="qcom" remote="to" revision="aosp-7.1" />
-  <project path="hardware/qcom/msm8x74" name="platform_hardware_qcom_msm8x74" groups="qcom" remote="to" revision="aosp-7.1" />
-  <project path="libcore" name="platform_libcore" groups="pdk" remote="to" revision="aosp-7.1" />
-  <project path="manifest" name="platform_manifest" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" groups="pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/KernelAdiutor" name="platform_packages_apps_KernelAdiutor-Mod" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" groups="pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="to" revision="aosp-7.1" />
+  <project path="art" name="platform_art" groups="pdk" remote="to" revision="aosp-7.1.1" />
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="to" revision="aosp-7.1.1" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="to" revision="aosp-7.1.1" />
+  <project path="external/busybox" name="platform_external_busybox" remote="to" revision="aosp-7.1.1" />
+  <project path="external/llvm" name="platform_external_llvm" groups="pdk" remote="to" revision="aosp-7.1.1" />
+  <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="to" revision="aosp-7.1.1" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="to" revision="aosp-7.1.1" />
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="to" revision="aosp-7.1.1" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="to" revision="aosp-7.1.1" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="to" revision="aosp-7.1.1" />
+  <project path="frameworks/support" name="platform_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="hardware/qcom/audio" name="platform_hardware_qcom_audio" groups="qcom,qcom_audio" remote="to" revision="aosp-7.1.1" />
+  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" groups="qcom" remote="to" revision="aosp-7.1.1" />
+  <project path="hardware/qcom/display" name="platform_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="to" revision="aosp-7.1.1" />
+  <project path="hardware/qcom/gps" name="platform_hardware_qcom_gps" groups="qcom,qcom_gps" remote="to" revision="aosp-7.1.1" />
+  <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="to" revision="aosp-7.1.1" />
+  <project path="hardware/qcom/media" name="platform_hardware_qcom_media" groups="qcom" remote="to" revision="aosp-7.1.1" />
+  <project path="hardware/qcom/msm8x74" name="platform_hardware_qcom_msm8x74" groups="qcom" remote="to" revision="aosp-7.1.1" />
+  <project path="libcore" name="platform_libcore" groups="pdk" remote="to" revision="aosp-7.1.1" />
+  <project path="manifest" name="platform_manifest" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" groups="pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/KernelAdiutor" name="platform_packages_apps_KernelAdiutor-Mod" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" groups="pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="to" revision="aosp-7.1.1" />
   <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="gh" revision="master" />
-  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1" />
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="to" revision="aosp-7.1" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="to" revision="aosp-7.1" />
-  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="aosp-7.1" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1.1" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="to" revision="aosp-7.1.1" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="to" revision="aosp-7.1.1" />
+  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="aosp-7.1.1" />
 
 <!-- END OCTOS -->
 
@@ -92,6 +92,7 @@
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
+  <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
   <project path="device/google/contexthub" name="device/google/contexthub" groups="device" />
@@ -444,6 +445,7 @@
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" groups="generic_fs" />
   <project path="packages/apps/TV" name="platform/packages/apps/TV" />
   <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" groups="pdk-fs" />
+  <project path="packages/apps/WallpaperPicker" name="platform/packages/apps/WallpaperPicker" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" groups="pdk-fs" />
   <project path="packages/providers/BlockedNumberProvider" name="platform/packages/providers/BlockedNumberProvider" groups="pdk-fs" />
