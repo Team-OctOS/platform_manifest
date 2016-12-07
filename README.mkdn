@@ -126,7 +126,7 @@ Initialize the Repositories
 ---------------------------
 
     cd ~/octos
-    repo init -u https://github.com/Team-OctOS/platform_manifest.git -b aosp-7.1 && repo sync
+    repo init -u https://github.com/Team-OctOS/platform_manifest.git -b aosp-7.1.1 && repo sync
 
 This will initialize the new repository and begin the initial sync.  This will take a while!
 
