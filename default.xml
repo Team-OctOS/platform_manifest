@@ -39,11 +39,19 @@
            sync-c="true"
            sync-j="4" />
 
-  <!-- AOSP Projects -->
-
-  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed">
+<!-- BEGIN OCTOS -->
+  <project path="build" name="platform_build" groups="pdk,tradefed" remote="to" revision="oct-14.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="oct-14.1" />
+  <project path="vendor/cm/sepolicy/qcom" name="platform_vendor_cm_sepolicy_qcom" remote="to" revision="oct-14.1" />
+  <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-14.1" />
+
+<!-- END OCTOS -->
+
+<!-- AOSP Projects -->
+
+  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed">
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/kati" name="CyanogenMod/android_build_kati" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="aosp" >
