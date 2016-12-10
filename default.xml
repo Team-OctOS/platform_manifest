@@ -43,6 +43,7 @@
   <project path="build" name="platform_build" groups="pdk,tradefed" remote="to" revision="oct-14.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="manifest" name="platform_manifest" remote="to" revision="oct-14.1" />
   <project path="vendor/to" name="platform_vendor_to" remote="to" revision="oct-14.1" />
   <project path="vendor/cm/sepolicy/qcom" name="platform_vendor_cm_sepolicy_qcom" remote="to" revision="oct-14.1" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-14.1" />
