@@ -15,7 +15,10 @@
 
   <remote  name="bitbucket"
            fetch="https://bitbucket.org" />
-
+  
+  <remote  name="gh"
+           fetch="https://github.com" />
+  
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod/"
            review="review.cyanogenmod.org"
@@ -30,7 +33,7 @@
   <remote  name="to"
            fetch="https://github.com/Team-OctOS/"
            review="review.teamoctos.com"
-           revision="refs/heads/oct-mm"
+           revision="refs/heads/oct-14.1"
            sync-c="true"
            sync-j="4" />
 
@@ -47,7 +50,9 @@
   <project path="vendor/to" name="platform_vendor_to" remote="to" revision="oct-14.1" />
   <project path="vendor/cm/sepolicy/qcom" name="platform_vendor_cm_sepolicy_qcom" remote="to" revision="oct-14.1" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-14.1" />
-
+  <project path="packages/apps/AboutOctOs" name="Team-OctOS/platform_packages_apps_AboutOctOs" remote="gh" revision="aosp-7.1.1" />
+  <project path="packages/apps/KernelAdiutor" name="Team-OctOS/platform_packages_apps_KernelAdiutor-Mod" remote="gh" revision="aosp-7.1.1" />
+  <project path="packages/apps/Tentacles" name="Team-OctOS/platform_packages_apps_Tentacles" remote="gh" revision="aosp-7.1.1" />
 <!-- END OCTOS -->
 
 <!-- AOSP Projects -->
