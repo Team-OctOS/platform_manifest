@@ -13,7 +13,14 @@
            sync-j="4" />
 
   <remote  name="to"
-           fetch="https://github.com/Team-OctOS/"
+           fetch="https://github.com/Team-OctOS"
+           review="review.teamoctos.com"
+           revision="refs/heads/aosp-7.1.1"
+           sync-c="true"
+           sync-j="4" />
+
+  <remote  name="to-d"
+           fetch="https://github.com/Team-OctOS-Devices"
            review="review.teamoctos.com"
            revision="refs/heads/aosp-7.1.1"
            sync-c="true"
