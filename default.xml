@@ -54,6 +54,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="to" revision="oct-14.1" />
+  <project path="external/busybox" name="platform_external_busybox" remote="to" revision="oct-14.1" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="to" revision="oct-14.1" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="to" revision="oct-14.1" />
   <project path="manifest" name="platform_manifest" remote="to" revision="oct-14.1" />
