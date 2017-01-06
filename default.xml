@@ -12,6 +12,10 @@
            sync-c="true"
            sync-j="4" />
 
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/"
+           sync-j="4" />
+
   <remote  name="to"
            fetch="https://github.com/Team-OctOS"
            review="review.teamoctos.com"
