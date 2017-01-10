@@ -65,6 +65,7 @@
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="to" revision="oct-14.1" />
   <project path="packages/apps/KernelAdiutor" name="platform_packages_apps_KernelAdiutor-Mod" remote="to" revision="aosp-7.1.1" />
   <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="gh" revision="n" />
+  <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="to" revision="aosp-7.1.1" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="to" revision="oct-14.1" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="oct-14.1" />
   <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="to" revision="oct-14.1" />
