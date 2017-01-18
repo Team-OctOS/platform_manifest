@@ -87,7 +87,9 @@
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="to" revision="aosp-7.1.1" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="to" revision="aosp-7.1.1" />
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="to" revision="aosp-7.1.1" />
-  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="aosp-7.1.1" />
+  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="aosp-7.1.1" >
+    <copyfile src="tools/build-oct.sh" dest="build-oct.sh" />
+  </project>
 
 <!-- END OCTOS -->
 
