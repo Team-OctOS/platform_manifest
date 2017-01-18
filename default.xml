@@ -71,7 +71,9 @@
   <project path="packages/apps/Tentacles" name="platform_packages_apps_Tentacles" remote="to" revision="oct-14.1" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="to" revision="oct-14.1" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="to" revision="oct-14.1" />
-  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="oct-14.1" />
+  <project path="vendor/to" name="platform_vendor_to" remote="to" revision="oct-14.1" >
+    <copyfile src="tools/build-oct.sh" dest="build-oct.sh" />
+  </project>
   <project path="vendor/to/product" name="platform_vendor_to_product" remote="to-d" revision="oct-14.1" />
   <project path="vendor/cm/sepolicy/qcom" name="platform_vendor_cm_sepolicy_qcom" remote="to" revision="oct-14.1" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="to" revision="oct-14.1" />
