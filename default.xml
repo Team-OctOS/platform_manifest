@@ -55,6 +55,7 @@
   </project>
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="to" revision="oct-14.1" />
   <project path="external/busybox" name="platform_external_busybox" remote="to" revision="oct-14.1" />
+  <project path="external/DUtils" name="platform_external_DUtils" remote="to" revision="oct-14.1" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="to" revision="oct-14.1" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="to" revision="oct-14.1" />
   <project path="manifest" name="platform_manifest" remote="to" revision="oct-14.1" />
@@ -63,6 +64,7 @@
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="to" revision="oct-14.1" />
   <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="to" revision="oct-14.1" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="to" revision="oct-14.1" />
+  <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="to" revision="oct-14.1" />
   <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="gh" revision="n" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="to" revision="oct-14.1" />
   <project path="packages/apps/OctOTA" name="platform_packages_apps_OctOTA" remote="to" revision="oct-14.1" />
